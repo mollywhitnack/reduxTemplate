@@ -5,7 +5,7 @@ import colors from 'colors';
 
 process.env.NODE_ENV = 'production';
 
-console.log('Generatinf minigies bundle for priduction via webpack.This will take a moment....'.blue);
+console.log('Generating minified bundle for production via webpack.This will take a moment....'.blue);
 
 webpack(webpackConfig).run((err, stats) =>{
   if(err){
@@ -27,7 +27,7 @@ webpack(webpackConfig).run((err, stats) =>{
   console.log(`Webpack stats: ${stats}`);
 
   //if we go this far buld succedded
-  console.log('Your app has been compikes in production mode and written to /dist. GOOD'.green);
+  console.log('Your app has been compiled in production mode and written to /dist. GOOD'.green);
   return 0;
 
 });
